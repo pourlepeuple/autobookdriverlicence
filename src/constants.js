@@ -1,0 +1,1 @@
+export const CANDIDAT_TOKEN_STORAGE_KEY = 'token'
