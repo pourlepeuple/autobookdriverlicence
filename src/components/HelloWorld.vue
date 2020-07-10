@@ -7,13 +7,14 @@
 <script>
 import { CANDIDAT_TOKEN_STORAGE_KEY } from '../constants'
 const baseUrlProd = 'https://beta.interieur.gouv.fr/candilib/api/v2/'
+const baseUrlQualif = 'https://candilib-qualif.netlify.app/candilib/api/v2/'
 const baseUrlLocal = 'http://localhost:8000/api/v2/'
 import axios from 'axios'
     
   export default {
     methods: {
       async test() {
-        axios.get(`${baseUrlProd}public/departements`)
+        axios.get(`${baseUrlQualif}public/departements`)
           .then(response => {
             console.log(response.data.url);
             console.log(response.data.explanation);
